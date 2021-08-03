@@ -68,7 +68,15 @@
 }
 .icon:hover{
     cursor: pointer;
-
+}
+.icon:active{
+    opacity:0.7;
+}
+.icon-small:hover{
+    cursor: pointer;
+}
+.icon-small:active{
+    opacity:0.7;
 }
 .icon-small img{
 width:160px;
