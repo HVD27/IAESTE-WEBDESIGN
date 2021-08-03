@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.time-white{
+/*.time-white{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -18,13 +18,13 @@
     left: 112px;
     position: absolute;
 }
-
+*/
 .time-grad{
     position:absolute;
     z-index: 1;
     top: 43px;
     left: 112px;
-    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(55,53,77,1));
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(55,53,77,1));
     background-clip: text;
     /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
