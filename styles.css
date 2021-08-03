@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+}
+
+.background{
+    background-image: linear-gradient(#2F353A, #1C1F22);
+    height: 100%;
+}
+
+/*.time-white{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 122px;
+    letter-spacing: 0.235em;
+    top: 43px;
+    left: 112px;
+    position: absolute;
+}
+*/
+.time-grad{
+    position:absolute;
+    z-index: 1;
+    top: 43px;
+    left: 112px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(55,53,77,1));
+    background-clip: text;
+    /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 122px;
+    letter-spacing: 0.235em;
+}
+
+.menu{
+    top:43px;
+    right: 112px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    width: 122px;
+    height: 118px;
+}
+
+.icon-name{
+    z-index: 5;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 35px;
+    color: #7F8489;
+    margin-right: 12px;
+}
+
+
+
+.tile-menu-4{
+    /* position: absolute; */
+    /* left: 1812.19px;
+    top: 365.38px; */
+    z-index: 4;
+    position: absolute;
+width: 110.38px;
+height: 106.76px;
+
+background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
+filter: blur(4px);
+border-radius: 30px;
+transform: rotate(180deg); 
+}
+
+.tile-menu-3{
+    z-index: 3;
+    position: absolute;
+width: 110.38px;
+height: 106.76px;
+
+background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
+border-radius: 30px;
+transform: rotate(180deg);
+}
+
+.tile-menu-2{
+    z-index: 2;
+    position: absolute;
+    width: 122px;
+    height: 118px;
+    
+    background: linear-gradient(318.21deg, #2C3036 14.05%, #31343C 85.29%);
+    filter: blur(2px);
+    border-radius: 30px;
+    transform: rotate(180deg);
+}
+
+.tile-menu-1{
+    z-index: 1;
+    position: absolute;
+    width: 118.13px;
+    height: 114.25px;
+    
+    background: linear-gradient(318.21deg, #2C3036 14.05%, #31343C 85.29%);
+    box-shadow: 7px 7px 30px #1F2427, 7px 7px 30px #485057;
+    border-radius: 30px;
+    transform: rotate(180deg);
+}
