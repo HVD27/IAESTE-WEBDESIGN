@@ -80,7 +80,7 @@
     /* right: 112px; */
 }
 
-.tile-menu-3{
+.tile-menu-4{
     /* position: absolute; */
     /* left: 1812.19px;
     top: 365.38px; */
@@ -89,18 +89,18 @@
     filter: blur(4px);
 }
 
-.tile-menu-2{
+.tile-menu-3{
     z-index: 3;
     background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
 }
 
-.tile-menu-1{
+.tile-menu-2{
     z-index: 2;
     background: linear-gradient(318.21deg, #2C3036 14.05%, #31343C 85.29%);
     filter: blur(2px);
 }
 
-.tile-menu-0{
+.tile-menu-1{
     z-index: 1;
     background: linear-gradient(318.21deg, #2C3036 14.05%, #31343C 85.29%);
     box-shadow: 7px 7px 30px #1F2427, -7px -7px 30px #485057;
