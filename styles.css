@@ -53,12 +53,10 @@
 .icon-name{
     z-index: 5;
     font-family: Lato;
-    /* font-style: normal;
-    font-weight: normal; */
     font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+    line-height: 35px;
     color: #7F8489;
+    margin-right: 12px;
 }
 
 
