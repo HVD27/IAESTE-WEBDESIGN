@@ -24,15 +24,36 @@
                     <img class="iconimg" src="countdown_button.png" style="width: 10rem; height: 10rem;">
                     <img class="iconimg" src="stopwatch_button.png" style="width: 10rem; height: 10rem;">
                 </span>
-                
+                <!-- <span class="icon col-sm-2" st><img src="stopwatch_button.png" style="width: 5rem; height: 5rem;"></span> -->
+                <!-- <div class="topicons col-md-4 text-right justify-content-end">
+                    <span class="icon text-right">
+                        <img src="countdown_button.png" style="width: 5rem; height: 5rem;">
+                    </span>
+                    <span class="icon text-right">
+                        <img src="stopwatch_button.png" style="width: 5rem; height: 5rem;">
+                    </span>
+                </div> -->
             </div>
-            
+            <!-- <div class="stopwatch row pt-5 justify-content-center text-center" id="stopwatch">
+                <ul>
+                    <li style="color: rgba(255, 255, 255, 1);">00 :</li>
+                    <li style="color: rgba(255, 255, 255, 0.63);">00 :</li>
+                    <li style="color: rgba(255, 255, 255, 0.45);">00</li>
+                </ul>
+            </div>
+            <div class="units row pt-5 justify-content-center text-center" id="stopwatch">
+                <ul>
+                    <li style="color: rgba(255, 255, 255, 1);">Hours</li>
+                    <li style="color: rgba(255, 255, 255, 0.63);">Minutes</li>
+                    <li style="color: rgba(255, 255, 255, 0.45);">Seconds</li>
+                </ul>
+            </div> -->
             <div class="stopwatch1">
-                <div class="circle pt-1"> 
+                <div class="circle pt-1" style="z-index: 2;"> 
                     <img src="smallcircle.png" class="img-responsive float-start" style="size: 70%;">   
                 </div>
                 <div class="time h1" id="timer"> 
-                    <h1> 00:<span class="light">00:</span><span class="lighter">00</span> </h1>
+                    <h1><span id="Hours">00:</span><span class="light" id="Minutes">00:</span><span class="lighter" id="Seconds">00</span> </h1>
                 </div> 
                  
                 <div class="units row text-center" id="stopwatch">
@@ -48,13 +69,80 @@
         <div class="container">
             <div class="stopwatch-buttons row">
                 <ul>
-                    <li><img src="start_stopwatch.png" style="width: 10rem; height: 10rem;"></li>
-                    <li>Reset</li>
-                    <li><img src="stop_stopwatch.png" style="width: 10rem; height: 10rem;"></li>
+                    <li onclick="start()"><img src="start_stopwatch.png" style="width: 10rem; height: 10rem;"></li>
+                    <li onclick="reset()">Reset</li>
+                    <li onclick="pause()"><img src="stop_stopwatch.png" style="width: 10rem; height: 10rem;"></li>
                 </ul>
             </div>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script> 
+
+            const timer = document.querySelector('.time');
+            var hr = 0;
+            var min = 0;
+            var sec = 0;
+            var stoptime = true;
+            
+            function start() {
+              if (stoptime == true) {
+                    stoptime = false;
+                    timerCycle();
+                }
+            }
+            
+            
+            function timerCycle() {
+                if (stoptime == false) {
+                sec = parseInt(sec);
+                min = parseInt(min);
+                hr = parseInt(hr);
+            
+                sec = sec + 1;
+            
+                if (sec == 60) {
+                  min = min + 1;
+                  sec = 0;
+                }
+                if (min == 60) {
+                  hr = hr + 1;
+                  min = 0;
+                  sec = 0;
+                }
+            
+                if (sec < 10 || sec == 0) {
+                  sec = '0' + sec;
+                }
+                if (min < 10 || min == 0) {
+                  min = '0' + min;
+                }
+                if (hr < 10 || hr == 0) {
+                  hr = '0' + hr;
+                }
+                Hours.innerHTML = hr+':';
+                Minutes.innerHTML = min+':';
+                Seconds.innerHTML = sec;
+            
+                setTimeout("timerCycle()", 1000);
+              }
+            }
+            
+            
+            function pause() {
+                if (stoptime == false) {
+                stoptime = true;
+              }
+            }
+            function reset() {
+                Hours.innerHTML ='00:';
+                Minutes.innerHTML = '00:';
+                Seconds.innerHTML = '00';
+                stoptime = true;
+                hr = 0;
+                sec = 0;
+                min = 0;
+            }
+            </script>
     </body>
 </html>
