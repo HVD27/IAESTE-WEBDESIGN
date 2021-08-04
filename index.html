@@ -104,7 +104,7 @@
             var entire = new Date();
             var hours = entire.getHours();
             var minutes = entire.getMinutes();
-            var AmPm = 'am';
+            var amPm = 'am';
             var day = entire.getDay();
             var date = entire.getDate();
             var month = entire.getMonth();
@@ -115,7 +115,7 @@
                 hours = 12;
             if (hours > 12) {
                 hours = '0' + (hours - 12);
-                AmPm = 'pm';
+                amPm = 'pm';
             }
     
             var dayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
@@ -133,7 +133,7 @@
                 document.getElementById('day').innerHTML = dayArray[day] + ',';
                 document.getElementById('date').innerHTML = date;
                 document.getElementById('month').innerHTML = monthArray[month];
-                document.getElementById('am-pm').innerHTML = AmPm;
+                document.getElementById('am-pm').innerHTML = amPm;
             }
         </script>
     </body>
