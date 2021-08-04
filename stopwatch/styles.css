@@ -90,11 +90,14 @@ width:130px;
   left: 50%;
   transform: translate(-50%, -50%)
 }
+
 .time { 
+    font-size: 10rem;
+    color:white ;
     position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 .time h1 { 
     font-size: 10rem;
@@ -124,4 +127,14 @@ width:130px;
         padding-top: 30rem;
  }
     
+}
+button { 
+    background-color: rgba(65, 105, 225, 0);
+    border: none;
+}
+.controls p { 
+    font-size: 3rem;
+    color: white;
+    text-decoration: #067ECE underline 2px;
+    text-underline-position: 5px below;
 }
