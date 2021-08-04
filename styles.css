@@ -105,7 +105,7 @@ width:130px;
     font-size: 280px;
     line-height: 352px;
     text-align: center;
-    letter-spacing: -0.1em;
+    letter-spacing: 0.1;
 }
 
 /* .current-time::before{
@@ -154,7 +154,7 @@ width:130px;
 #date{
     width: fit-content;
     color: #0E9EF1;
-    ;
+    
 }
 
 #month{
