@@ -160,3 +160,93 @@ width:130px;
 #month{
     width: fit-content;
 }
+
+/* ------------COUNTDOWN PAGE (2)------------ */
+.cd-box{
+    width: fit-content;
+    padding-top: 15.6vw;
+    
+}
+
+.cd-prompt{
+    font-size: 3.65vw; /* size decreases with the width but now with height, but this should not be a problem because when height decreases then width also must decrease, so the font will adjust*/
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #fff,#85888A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    line-height: 4.42vw;
+    letter-spacing: 0.12em;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2vw;
+}
+
+input{
+    background-color: #454545;
+}
+
+.output{
+    font-size: 2vw;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#timer_value{
+    color: #FFFFFF;
+}
+
+input[type=text] {
+    background-color:#454545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+    padding: 0.5vw;
+}
+
+.row-input{
+    display:flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content:space-between;
+}
+
+#just-border{
+    display: none;
+    border-radius: 50px;
+    border: 3px solid #fff ;
+    /* border-image: linear-gradient(#fff, #3F494F); */
+    font-size: 7vw;
+    color: #FFFFFF;
+    margin-top:2vw;
+}
+
+.cd-text{
+    font-size: 1.664vw;
+    color: #FFFFFF;
+}
+
+.blue{
+    color: #0E9EF1;
+    
+}
+
+#days #hrs #minutes #sec{
+    font-size: 7vw;
+}
+
+.output-details{
+    font-size: 1.5vw;
+}
+
+/* .col{
+    padding: 3vw;
+} */
