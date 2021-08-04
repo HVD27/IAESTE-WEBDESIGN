@@ -1,4 +1,3 @@
-
 <html lang="en">
 
     <head>
@@ -90,7 +89,7 @@
                         </div>
                     </div>
                     <div id="am-pm">
-                        pm
+                        
                     </div>
                 </div>
                 <div class="row current-day">
@@ -115,7 +114,7 @@
             if (hours == 0)
                 hours = 12;
             if (hours > 12) {
-                hours = hours - 12;
+                hours = '0' + (hours - 12);
                 AmPm = 'pm';
             }
     
@@ -134,14 +133,10 @@
                 document.getElementById('day').innerHTML = dayArray[day] + ',';
                 document.getElementById('date').innerHTML = date;
                 document.getElementById('month').innerHTML = monthArray[month];
-                
+                document.getElementById('am-pm').innerHTML = AmPm;
             }
         </script>
     </body>
     
     </html>
-    
-    
-    
-    
-    
+

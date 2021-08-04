@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
 }
@@ -38,7 +39,7 @@
 
 .menu{
     top:43px;
-    right: 112px;
+    right: 80px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -53,10 +54,9 @@
     align-items: center;
 }
 
-/* .icon{
-    width: 122px;
-    height: 118px;
-} */
+.icon img{
+    width:120px;
+}
 
 .icon-name{
     z-index: 5;
@@ -79,34 +79,29 @@
     opacity:0.7;
 }
 .icon-small img{
-width:160px;
+width:130px;
 
 }
 
 
 /* ------------CLOCK PAGE (1)------------ */
 
-.clk-time{
-    font-family:sans-serif;
-/* font-style: normal;
-font-weight: normal; */
-
-
-color: #FFFFFF;
-/* top: 350px;
-left: 650px; */
-/* top:270px;
-left: 450px; */
-/* top: 32%;
-left: 34%; */
-top: 30%;
-left: 27%;
-position: absolute;
-/* margin-right: auto;
-margin-left: auto; */
-}
+ .clk-time{
+    /* top: 350px;
+    left: 650px; */
+    /* top:270px;
+    left: 450px; */
+    /* top: 32%;
+    left: 34%; */
+    top: 30%;
+    left: 35%;
+    position: absolute;
+    
+} 
 
 .current-time{
+    font-family:sans-serif;
+    color: #FFFFFF;
     font-size: 280px;
     line-height: 352px;
     text-align: center;
@@ -165,43 +160,3 @@ margin-left: auto; */
 #month{
     width: fit-content;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
