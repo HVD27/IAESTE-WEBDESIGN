@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+}
+
+.background{
+    background-image: linear-gradient(#2F353A, #1C1F22);
+    height: 100%;
+}
+
+/*.time-white{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 122px;
+    letter-spacing: 0.235em;
+    top: 43px;
+    left: 112px;
+    position: absolute;
+}
+*/
+.time-grad{
+    position:absolute;
+    z-index: 1;
+    top: 43px;
+    left: 112px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(55,53,77,1));
+    background-clip: text;
+    /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    font-size: 100px;
+    line-height: 122px;
+    letter-spacing: 0.235em;
+}
+
+.menu{
+    top:43px;
+    right: 80px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-small{
+    top: 200px;
+    right: 112px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon img{
+    width:120px;
+}
+
+.icon-name{
+    z-index: 5;
+    font-family: Lato;
+    font-size: 18px;
+    /* line-height: 35px; */
+    color: #7F8489;
+    /* margin-right: 12px; */
+}
+.icon:hover{
+    cursor: pointer;
+}
+.icon:active{
+    opacity:0.7;
+}
+.icon-small:hover{
+    cursor: pointer;
+}
+.icon-small:active{
+    opacity:0.7;
+}
+.icon-small img{
+width:130px;
+
+}
+
+
+/* ------------CLOCK PAGE (1)------------ */
+
+ .clk-time{
+    /* top: 350px;
+    left: 650px; */
+    /* top:270px;
+    left: 450px; */
+    /* top: 32%;
+    left: 34%; */
+    top: 30%;
+    left: 35%;
+    position: absolute;
+    
+} 
+
+.current-time{
+    font-family:sans-serif;
+    color: #FFFFFF;
+    font-size: 280px;
+    line-height: 352px;
+    text-align: center;
+    letter-spacing: 0.1;
+}
+
+/* .current-time::before{
+    content: none;
+} */
+
+.current-day{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* text-align: center; */
+    letter-spacing: 0.355em;
+    /* width: fit-content; */
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#min{
+    opacity: 45%;
+}
+
+#am-pm{
+    z-index: 5;
+    font-size: 75px;
+    line-height: 94px;
+    letter-spacing: -0.1em;
+    top: 130px;
+    left: 540px;
+    position: absolute;
+    text-shadow: 0px 5px 5px #000;
+}
+
+#day{
+    width: fit-content;
+}
+
+#date{
+    width: fit-content;
+    color: #0E9EF1;
+    
+}
+
+#month{
+    width: fit-content;
+}
+@media(max-width: 1191px)
+{
+    .clk-time .row{
+        max-width: 75%;
+    }
+}
