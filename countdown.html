@@ -26,64 +26,15 @@
 
 <body>
     <div id="home" class="background">
-
-        <div class="time-grad">
-            time.
-        </div>
-
-        <div class="menu visible-md visible-lg visible-sm">
-            <!-- <button class="tile-menu-3 tile-menu">
-                        <div class="tile-menu-2 tile-menu">
-                            <div class="tile-menu-1 tile-menu">
-                                <div class="tile-menu-0 tile-menu">
-                                    hello
-                                </div>
-                            </div>
-                        </div>
-                    </button> -->
-
-            <div class="icon">
-                <img src="https://imgur.com/JkWKY4D.png">
-                <!-- <div class="tile-menu-4 tile-menu-icon-1"></div>
-                    <div class="tile-menu-3 tile-menu-icon-1"></div>
-                    <div class="tile-menu-2 tile-menu-icon-1"></div>
-                    <div class="tile-menu-1 tile-menu-icon-1"></div> -->
-            </div>
-
-            <div class="icon">
-                <img src="https://imgur.com/qinXJyE.png">
-                <!-- <div class="tile-menu-4 tile-menu-icon-2"></div>
-                    <div class="tile-menu-3 tile-menu-icon-2"></div>
-                    <div class="tile-menu-2 tile-menu-icon-2"></div>
-                    <div class="tile-menu-1 tile-menu-icon-2"></div> -->
-            </div>
-
-        </div>
-        <div class="menu-small hidden-md hidden-lg hidden-sm">
-            <!-- <button class="tile-menu-3 tile-menu">
-                        <div class="tile-menu-2 tile-menu">
-                            <div class="tile-menu-1 tile-menu">
-                                <div class="tile-menu-0 tile-menu">
-                                    hello
-                                </div>
-                            </div>
-                        </div>
-                    </button> -->
-
-            <div class="icon-small">
-                <img src="https://imgur.com/pv2YdwQ.png">
-                <!-- <div class="tile-menu-4 tile-menu-icon-1"></div>
-                    <div class="tile-menu-3 tile-menu-icon-1"></div>
-                    <div class="tile-menu-2 tile-menu-icon-1"></div>
-                    <div class="tile-menu-1 tile-menu-icon-1"></div> -->
-            </div>
-
-            <div class="icon-small">
-                <img src="https://imgur.com/qinXJyE.png">
-                <!-- <div class="tile-menu-4 tile-menu-icon-2"></div>
-                    <div class="tile-menu-3 tile-menu-icon-2"></div>
-                    <div class="tile-menu-2 tile-menu-icon-2"></div>
-                    <div class="tile-menu-1 tile-menu-icon-2"></div> -->
+        <div class="container">
+            <div class="row p-5">
+                <div class="logo col-md-10">
+                    time.
+                </div>
+                <span class="icon col-md-2">
+                    <img class="iconimg" src="https://imgur.com/JkWKY4D.png" style="width: 10vw; height: 10vw;">
+                    <img class="iconimg" src="https://imgur.com/qinXJyE.png" style="width: 10vw; height: 10vw;">
+                </span>
             </div>
         </div>
 
@@ -94,7 +45,7 @@
             <div class="cd-prompt">
                 Enter a date
             </div>
-            <div class="row-input">
+            <!-- <div class="row row-input">
                 <div class="col-lg-2 col-md-4 col-xs-6">
                     <input type="text" id="day" placeholder="Date">
                 </div>
@@ -113,32 +64,56 @@
                 <div class="col-lg-12">
                     <input type="button" value="Submit" onclick="setCountDown();">
                 </div>
-            </div>
+            </div> -->
 
+            <div class="row row-input">
+                <div class="row row-date">
+                    <div class="col-xs-12">
+                        <input type="text" id="day" placeholder="Date">
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="text" id="month" placeholder="Month">
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="text" id="year" placeholder="Year">
+                    </div>
+                </div>
+                <div class="row row-time">
+                    <div class="col-xs-6">
+                        <input type="text" id="hour" placeholder="Hour">
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" id="mins" placeholder="Min">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 btn">
+                <input type="button" value="Submit" onclick="setCountDown();">
+            </div>
             <div id="just-border">
                 <div class="output row">
                     <div class="col">
-                        <div id="days"></div>
+                        <div id="days" class="h1"></div>
                         <div class="output-details">days</div>
                     </div>
                     <div class="col">
-                        <div id="hrs"></div>
+                        <div id="hrs" class="h1"></div>
                         <div class="output-details">hours</div>
                     </div>
                     <div class="col">
-                        <div id="minutes"></div>
+                        <div id="minutes" class="h1"></div>
                         <div class="output-details">min</div>
                     </div>
                     <div class="col">
-                        <div id="sec"></div>
+                        <div id="sec" class="h1"></div>
                         <div class="output-details">sec</div>
                     </div>
                 </div>
                 <div class="row output-details">
-                    
-                    
-                    
-                    
+
+
+
+
                 </div>
             </div>
 
