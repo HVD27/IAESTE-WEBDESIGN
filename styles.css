@@ -198,6 +198,7 @@ input{
     padding: 2vw;
 }
 
+
 #timer_value{
     color: #FFFFFF;
 }
@@ -221,12 +222,14 @@ input[type=text] {
 
 #just-border{
     display: none;
-    border-radius: 50px;
+    border-radius: 2vw;
     border: 3px solid #fff ;
     /* border-image: linear-gradient(#fff, #3F494F); */
     font-size: 7vw;
     color: #FFFFFF;
     margin-top:7vw;
+    padding: 0 2vw;
+    
 }
 
 .cd-text{
@@ -245,6 +248,7 @@ input[type=text] {
 
 .output-details{
     font-size: 1.5vw;
+    
 }
 
 input[type=button]{
@@ -255,6 +259,10 @@ input[type=button]{
     margin-top: 1vw;
     padding: 1vw 2vw;
     color: #fff;
+}
+
+.col-ip{
+    margin: 1vw;
 }
 
 
@@ -376,13 +384,13 @@ font-size: 1vw;
     .row-input{
         flex-direction: column;
     }
-    .row-date{
+    /* .row-date{
         margin:1vw 0;
     }
     .row-time{
         margin-top:1vw;
         margin-bottom:1vw;
-    }
+    } */
 }
 
 
@@ -421,17 +429,23 @@ font-size: 1vw;
     .row-date{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
     .row-time{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
-    .col{
+    #just-border{
+        margin-top: 10vw;
+    }
+
+    /* .col-ip{
         margin-top:1vw;
         margin-bottom:1vw;
-    }
+    } */
     /* .time h1 { 
         font-size: 4rem
     } */

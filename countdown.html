@@ -68,21 +68,21 @@
 
             <div class="row row-input">
                 <div class="row row-date">
-                    <div class="col-xs-12">
+                    <div class="col-ip">
                         <input type="text" id="day" placeholder="Date">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-ip">
                         <input type="text" id="month" placeholder="Month">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-ip">
                         <input type="text" id="year" placeholder="Year">
                     </div>
                 </div>
                 <div class="row row-time">
-                    <div class="col-xs-6">
+                    <div class="col-ip">
                         <input type="text" id="hour" placeholder="Hour">
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-ip">
                         <input type="text" id="mins" placeholder="Min">
                     </div>
                 </div>
@@ -94,19 +94,19 @@
                 <div class="output row">
                     <div class="col">
                         <div id="days" class="h1"></div>
-                        <div class="output-details">days</div>
+                        <div class="output-details text-center">days</div>
                     </div>
                     <div class="col">
                         <div id="hrs" class="h1"></div>
-                        <div class="output-details">hours</div>
+                        <div class="output-details text-center">hours</div>
                     </div>
                     <div class="col">
                         <div id="minutes" class="h1"></div>
-                        <div class="output-details">min</div>
+                        <div class="output-details text-center">min</div>
                     </div>
                     <div class="col">
                         <div id="sec" class="h1"></div>
-                        <div class="output-details">sec</div>
+                        <div class="output-details text-center">sec</div>
                     </div>
                 </div>
                 <div class="row output-details">
@@ -180,7 +180,6 @@
                 document.getElementById("hrs").innerHTML = hours + ' : ';
                 document.getElementById("minutes").innerHTML = minutes + ' : ';
                 document.getElementById("sec").innerHTML = seconds;
-                document.getElementById("days").style.fontSize = "x-large";
             }
             timer = setInterval(showtimer, 1000);
         }
