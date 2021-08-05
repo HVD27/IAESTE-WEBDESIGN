@@ -15,7 +15,7 @@ display:inline;
 } 
 .home{
     background-image: linear-gradient(#2F353A, #1C1F22);
-    height: 100%;
+    height: 100vh;
 }
 .logo{
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(55,53,77,1));
@@ -25,28 +25,11 @@ display:inline;
   -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight:900;
-    font-size: 5rem;
+    font-size: 5vw;
     line-height: 5rem;
     letter-spacing: 0.235em;
 }
-@media only screen and (max-width: 767px) {
-    .logo{
-      text-align: center;
-      font-size: 3rem;
-    }
-    .icon{
-        text-align: center;
-        justify-content: center;
-        padding-top: 2rem;
-    }
-    .time h1 { 
-        font-size: 6rem
-    }
-    .iconimg{
-        width: 2rem;
-        height: 2rem;
-    }
-  }
+
 .stopwatch{
     color: white;
     font-size: 5rem;
@@ -57,45 +40,50 @@ display:inline;
     
 }
 
-.icon:hover{
+.icon img:hover{
     cursor: pointer;
 }
-.icon:active{
+.icon img:active{
     opacity:0.7;
 }
 
-.stopwatch{
+/* .stopwatch{
        padding-top: 20rem;
-}
+} */
 .units{
-    position: absolute;
-  top: 60%;
-  left: 52%;
-  transform: translate(-50%, -50%)
+position: absolute;
+top: 55%;
+left: 52%;
+transform: translate(-50%, -50%);
+font-size: 1vw;
+
 }
 .circle { 
     position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%)
 }
-.stopwatch_buttons { 
-    justify-content: center;
-    padding-top: 30rem;
+.stopwatch-buttons { 
+    /* padding-top: 100vh; */
     position: absolute;
-  top: 100%;
-  left: 50%;
-  /* transform: translate(-50%, -50%) */
+    top: 90%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    vertical-align: bottom;
+    font-family: montserrat, sans-serif;
+    color: white;
+    letter-spacing: 1vw;
 }
 
 .time { 
     position: absolute;
-  top: 48%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
 .time h1 { 
-    font-size: 7rem;
+    font-size: 5vw;
     color:white ;
 }
 .time h4 { 
@@ -108,6 +96,9 @@ display:inline;
 .lighter { 
     opacity: 45%;
 }
+.timer{
+    z-index: 1;
+}
 /* .stopwatch {
     display: flex;
     flex-direction: column;
@@ -115,3 +106,36 @@ display:inline;
 /* .controls {
     display: flex;
 } */
+@media only screen and (max-width: 767px) {
+    .html{
+        font-size: 40%;
+    }
+    .logo{
+      text-align: center;
+      font-size: 3rem;
+    }
+    .icon{
+        text-align: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .units{
+        top: 53%;
+        left: 53%;
+    }
+    .time h1 { 
+        font-size: 7vw;
+    }
+    /* .iconimg{
+        width: 2rem;
+        height: 2rem;
+    } */
+  }
+@media only screen and (max-width: 576px) {
+    .html{
+        font-size: 10%;
+    }
+    /* .time h1 { 
+        font-size: 4rem
+    } */
+}
