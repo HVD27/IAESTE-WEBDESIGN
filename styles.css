@@ -162,11 +162,10 @@ width:130px; */
 }
 
 /* ------------COUNTDOWN PAGE (2)------------ */
-.cd-box{
+/* .cd-box{
     width: fit-content;
     /* padding-top: 15.6vw; */
     
-}
 
 .cd-prompt{
     font-size: 3.65vw; /* size decreases with the width but now with height, but this should not be a problem because when height decreases then width also must decrease, so the font will adjust*/
@@ -189,7 +188,7 @@ input{
     background-color: #454545;
 }
 
-.output{
+#output{
     font-size: 2vw;
     color: #FFFFFF;
     display: flex;
@@ -198,9 +197,12 @@ input{
     padding: 2vw;
 }
 
-
-#timer_value{
-    color: #FFFFFF;
+#reached{
+    color: #fff;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw 0;
 }
 
 input[type=text] {
@@ -222,9 +224,19 @@ input[type=text] {
 
 #just-border{
     display: none;
+    /* border-radius: 2vw;
+    border: 3px solid #fff ; */
+
+
+    /* border:2px solid transparent;
+    border-image: linear-gradient(45deg, #fff, );
+    border-image-slice: 1; */
+    
+    /* border-radius: 2vw;
+    box-shadow: -3px -3px 10px #1F2427, 3px 3px 10px #3F494F; */
+
     border-radius: 2vw;
-    border: 3px solid #fff ;
-    /* border-image: linear-gradient(#fff, #3F494F); */
+    box-shadow: 0px 0px 20px #3F494F;
     font-size: 7vw;
     color: #FFFFFF;
     margin-top:7vw;
@@ -257,8 +269,9 @@ input[type=button]{
     border: none;
     border-radius: 2vw;
     margin-top: 1vw;
-    padding: 1vw 2vw;
+    padding: 0.5vw 2vw;
     color: #fff;
+    font-size: 1.5vw;
 }
 
 .col-ip{

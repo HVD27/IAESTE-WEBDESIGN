@@ -91,26 +91,26 @@
                 <input type="button" value="Submit" onclick="setCountDown();">
             </div>
             <div id="just-border">
-                <div class="output row">
+                <div class="row" id="output">
                     <div class="col">
-                        <div id="days" class="h1"></div>
+                        <h1><div id="days"></div></h1>
                         <div class="output-details text-center">days</div>
                     </div>
                     <div class="col">
-                        <div id="hrs" class="h1"></div>
-                        <div class="output-details text-center">hours</div>
+                        <h1 class="light"><div id="hrs"></div></h1>
+                        <div class="output-details text-center light">hours</div>
                     </div>
                     <div class="col">
-                        <div id="minutes" class="h1"></div>
-                        <div class="output-details text-center">min</div>
+                        <h1 class="light"><div id="minutes"></div></h1>
+                        <div class="output-details text-center light">min</div>
                     </div>
                     <div class="col">
-                        <div id="sec" class="h1"></div>
-                        <div class="output-details text-center">sec</div>
+                        <h1 class="lighter"><div id="sec"></div></h1>
+                        <div class="output-details text-center lighter">sec</div>
                     </div>
                 </div>
                 <div class="row output-details">
-
+                    <p id="reached"></p>
 
 
 
@@ -168,7 +168,9 @@
                 if (distance < 0) {
 
                     clearInterval(timer);
-                    document.getElementById("timer_value").innerHTML = 'Reached!';
+                    document.getElementById("reached").innerHTML = 'Reached!';
+                    var opDiv = document.getElementById('output');
+                    opDiv.style.display = 'none';
                     return;
                 }
                 var days = Math.floor(distance / day);
