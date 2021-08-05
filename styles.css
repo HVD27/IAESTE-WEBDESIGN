@@ -108,7 +108,7 @@ display:inline;
 /* .controls {
     display: flex;
 } */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
     .html{
         font-size: 40%;
     }
