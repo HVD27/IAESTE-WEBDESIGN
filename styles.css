@@ -217,14 +217,14 @@ input[type=text] {
     padding: 0.5vw;
 }
 
-.row-input{
+/* .col-input{
     display:flex;
     flex-direction: row;
     margin-right: auto;
     margin-left: auto;
     justify-content:space-between;
     width: fit-content;
-}
+} */
 
 #just-border{
     display: none;
@@ -279,9 +279,14 @@ input[type=button]{
     font-size: 1.5vw;
 }
 
-.col-ip{
-    margin: 1vw;
-}
+/* .row{
+    justify-content: space-around;
+} */
+
+/* .col-ip{
+    margin-left: 3vw;
+    margin-right: 3vw;
+} */
 
 h1{
     font-size: 6vw;
@@ -401,7 +406,7 @@ font-size: 1vw;
 } */
 
 @media only screen and (max-width: 992px){
-    .row-input{
+    .col-input{
         flex-direction: column;
     }
     /* .row-date{
