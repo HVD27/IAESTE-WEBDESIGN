@@ -34,7 +34,7 @@
                 time.
             </div>
             <span class="icon col-md-2">
-                <img class="iconimg" src="countdown_button.png" style="width: 10vw; height: 10vw;">
+                <img class="iconimg" src="clock_button.png" style="width: 10vw; height: 10vw;">
                 <img class="iconimg" src="stopwatch_button.png" style="width: 10vw; height: 10vw;">
             </span>
         </div>
@@ -46,53 +46,83 @@
             <div class="cd-prompt">
                 Enter a date
             </div>
-            <div class="row row-input">
-                <div class="row row-date">
-                    <div class="col-ip">
+            <!-- <div class="col col-input col-lg-12 col-md-6 col-xs-2">
+                <div class="row row-date col-lg-6 col-md-12 col-xs-2">
+                    <div class="col-ip col-lg-2 col-md-4">
                         <input type="text" id="day" placeholder="Date">
                     </div>
-                    <div class="col-ip">
+                    <div class="col-ip col-lg-2 col-md-4">
                         <input type="text" id="month" placeholder="Month">
                     </div>
-                    <div class="col-ip">
+                    <div class="col-ip col-lg-2 col-md-4">
                         <input type="text" id="year" placeholder="Year">
                     </div>
                 </div>
-                <div class="row row-time">
-                    <div class="col-ip">
+                <div class="row row-time col-lg-6 col-md-12 col-xs-2">
+                    <div class="col-ip col-lg-2 col-md-6">
                         <input type="text" id="hour" placeholder="Hour">
                     </div>
-                    <div class="col-ip">
+                    <div class="col-ip col-lg-2 col-md-6">
+                        <input type="text" id="mins" placeholder="Min">
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="col">
+                <div class="row justify-content-around">
+                    <div class="col-md-2 btn">
+                        <input type="text" id="day" placeholder="Date">
+                    </div>
+                    <div class="col-md-2 btn">
+                        <input type="text" id="month" placeholder="Month">
+                    </div>
+                    <div class="col-md-2 btn">
+                        <input type="text" id="year" placeholder="Year">
+                    </div>
+                    <div class=" col-md-2 btn">
+                        <input type="text" id="hour" placeholder="Hour">
+                    </div>
+                    <div class=" col-md-2 btn">
                         <input type="text" id="mins" placeholder="Min">
                     </div>
                 </div>
             </div>
+
+            <div class="col">
+                <div class="row justify-content-around">
+                    
+                
+                </div>
+            </div>
+
             <div class="col-xs-12 btn">
                 <input type="button" value="Submit" onclick="setCountDown();">
             </div>
+
         </div>
         <div class="container">
             <div id="just-border">
                 <div class="row" id="output">
-                    <div class="col">
+                    <div class="col text-center">
                         <h1>
                             <div id="days"></div>
                         </h1>
                         <div class="output-details text-center">days</div>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <h1 class="light">
                             <div id="hrs"></div>
                         </h1>
                         <div class="output-details text-center light">hours</div>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <h1 class="light">
                             <div id="minutes"></div>
                         </h1>
                         <div class="output-details text-center light">min</div>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <h1 class="lighter">
                             <div id="sec"></div>
                         </h1>
